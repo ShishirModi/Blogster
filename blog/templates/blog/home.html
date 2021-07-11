@@ -3,10 +3,10 @@
 {% block content %}
     <div class="row">
         <div class="col-12 col-md-3 pr-4 dont-move">
-            <a href="/"> <h2><img class="img-fluid" width="60" src="{% static 'blog/logo.png' %}">BlogRoom</h2></a><br>
+            <a href="/"> <h2><img class="img-fluid" width="60" src="{% static 'blog/logo.png' %}">Blogster</h2></a><br>
             <div class="profile-section">
             <h3 class="white-important p-2">
-                Profile
+                Your Profile
             </h3>
             <article class="media content-section" style="height: 140px; width: 100%">
                 {%  if user_profile != None %}
@@ -120,7 +120,7 @@
             <div class="full-width row">
                 <div class="col-6">
                     <h3 class="white-important mb-3">
-                        Tweets
+                        Posts
                     </h3>
                 </div>
                  <div class="col-6 no-padding">
@@ -154,10 +154,10 @@
                            {% if post.author == user %}
                                 <a class="material-icons ml-2"
                                    style="font-size: 14px"
-                                        href="{% url 'post-delete' post.id %}">clear</a>
+                                        href="{% url 'post-delete' post.id %}">Clear</a>
                                 <a class="material-icons ml-2"
                                    style="font-size: 14px"
-                                        href="{% url 'post-update' post.id %}">update</a>
+                                        href="{% url 'post-update' post.id %}">Update</a>
                             {%  endif %}
                        </div>
                    </div>
@@ -285,12 +285,12 @@
 
                 </article>
                 {% endif %}
-                <p><a href="">Terms</a>,
-<a href="">Privacy policy</a>,
-<a href="">Cookies</a>,
-<a href="">Ads info</a>,
-<a href="">More</a>
-© 2020 Twitter, Inc.</p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Terms</a>,
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Privacy policy</a>,
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Cookies</a>,
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Ads info</a>,
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">More</a>
+© 2021 OMT</p>
 
         </div>
     </div>
