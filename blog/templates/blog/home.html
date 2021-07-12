@@ -93,7 +93,7 @@
                 {% if user_profile is None %}
                 <div style="margin-left: auto; margin-right:auto">
                     <a class="btn btn-sm btn-outline-primary mb-4 mr-3 " href="{% url 'post-create' %}">
-                        Tweet
+                        Post
                     </a>
                 </div>
                 {% endif %}
@@ -244,7 +244,7 @@
             <form action="{% url 'search' %}" method="post">{% csrf_token %}
                 <div class="search-container">
                     <div class="search">
-                    <input required name="search" type="text" id="zip-code-input" placeholder="Search Twitter">
+                    <input required name="search" type="text" id="zip-code-input" placeholder="Search Blogster">
                     <button type="submit" style="border:0; background: transparent;"><i class="fa fa-search"></i> </button> </a>
                 </form>
               </div>
