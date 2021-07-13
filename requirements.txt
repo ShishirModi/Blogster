@@ -54,4 +54,4 @@ zope.event
 zope.interface
 djangorestframework
 cloudinary
-cloudinary_storage
+django-cloudinary-storage
